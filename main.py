@@ -58,7 +58,7 @@ for i in range(start, start+words_per_page):
             if word_input == word:
                 st.write("Correct!")
             elif word_input == '':
-                pass
+                st.write("")
             else:
                 st.write("Incorrect!")
 
