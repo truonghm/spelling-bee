@@ -53,12 +53,12 @@ for i in range(start, start+words_per_page):
                 st.write(f'Pronunciation: {pronunciation}')
         with col2:
             word_input = st.text_input("Enter word:", key=i).lower().strip()
-            if not word_input.isalpha() or " " in word_input:
+            if word_input == '':
+                pass
+            elif not word_input.isalpha() or " " in word_input:
                 st.write("Incorrect!")
-            if word_input == word:
+            elif word_input == word:
                 st.write("Correct!")
-            elif word_input == '':
-                st.write("")
             else:
                 st.write("Incorrect!")
 
