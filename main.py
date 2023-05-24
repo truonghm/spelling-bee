@@ -64,4 +64,4 @@ for i in range(start, start+words_per_page):
         fp = BytesIO()
         audio = audio_bytes.write_to_fp(fp)
         fp.seek(0)
-        st.audio(fp, format='audio/mp3')
+        st.audio(fp, format='audio/mpeg')
